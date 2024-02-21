@@ -71,7 +71,7 @@ public class LoginFrame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String username = userTextField.getText();
                 String password = new String(passwordField.getPassword());
-                userDao.createUser(username, password);  // Assuming 'createUser' adds a new user
+                userDao.insertUser(username, password);  //
                 frame.dispose();
                 transitionToGameLauncher();
             }
